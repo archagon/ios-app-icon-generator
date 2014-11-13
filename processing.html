@@ -1,0 +1,31 @@
+<style>
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+}
+.icon {
+    background-image: url('input.png');
+    background-size: 100% 100%;
+    border-radius: 17.544%;
+}
+.icon {
+    -webkit-mask-image: url('ios7-icon.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+}
+.icon::after {
+    content: " ";
+    display: block;
+    background: url('ios7-icon-border.svg');
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+</style>
+
+<div class="icon" />

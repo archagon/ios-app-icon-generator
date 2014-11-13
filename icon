@@ -1,0 +1,11 @@
+#!/bin/sh
+
+output_name="output"
+width=200
+
+script_dir=$(dirname $0)
+zoom_width=$(($width/100))
+
+cd $script_dir
+./webkit2png processing.html --filename=$output_name --fullsize --transparent --selector=".icon" --zoom=$zoom_width
+mv "$output_name-full.png" "$output_name.png"
